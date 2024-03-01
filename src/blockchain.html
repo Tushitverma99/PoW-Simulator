@@ -81,11 +81,11 @@
                   ${state.t.chain.l4[state.l]}
                 </div>
 
-                <div click.delegate="setAsLast(block)" show.bind="state.privateKey && !block.head && !block.isLast" class="button is-light has-shadow is-size-8"
+                <!-- <div click.delegate="setAsLast(block)" show.bind="state.privateKey && !block.head && !block.isLast" class="button is-light has-shadow is-size-8"
                      style="position: absolute; right:0; top: 0; padding:0.25rem 0.5rem; height: auto; flex-direction: column">
                   <div>${state.t.chain.l5[state.l]}</div>
                   <div class="is-hidden-mobile" style="font-size:8px">(${state.t.chain.l6[state.l]})</div>
-                </div>
+                </div> -->
 
                 <div show.bind="!block.head && block.isLast" class="button is-info has-shadow is-size-7" style="position: absolute; right:0; top: 0; padding:0.25rem 0.5rem;">
                   ${state.t.chain.l2[state.l]}

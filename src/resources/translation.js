@@ -42,7 +42,7 @@ export default {
     },
     b3: {
       ger: 'Du weißt bereits wie die Bitcoin Blockchain funktioniert?',
-      eng: 'You already know how the Bitcoin Blockchain works?'
+      eng: ''
     },
     b4: {
       ger: 'Lerne zuerst wie Bitcoin funktioniert.',
@@ -52,10 +52,10 @@ export default {
       ger: 'Kurze Videoeinführung zum Simulator (Englisch).',
       eng: 'Brief video introduction to the simulator.'
     },
-    reminder: {
-      ger: 'Achtung: Dieser Simulator ist ein reines Lerntool, keine echten Bitcoins. Wallets in dieser Simulation haben keinen Wert!',
-      eng: "Please note: This page is purely educational, it's only a simulation not real Bitcoin. Wallets in this simulation do not have any value!"
-    },
+    // reminder: {
+    //   ger: 'Achtung: Dieser Simulator ist ein reines Lerntool, keine echten Bitcoins. Wallets in dieser Simulation haben keinen Wert!',
+    //   eng: "Please note: This page is purely educational, it's only a simulation not real Bitcoin. Wallets in this simulation do not have any value!"
+    // },
     tab1: {
       ger: 'Blockchain',
       eng: 'Blockchain'
@@ -98,19 +98,19 @@ export default {
     },
     i4: {
       ger: 'Erstelle eigene private Blockchains und nutze den Simulator mit nicht öffentlichen Gruppen oder Schulklassen',
-      eng: 'Create your own private blockchain and use the simulator with non-public groups or school classes'
+      eng: 'Create your own dummy blockchain.'
     },
     i5: {
       ger: 'Erstelle Transaktionen unter falschem Namen und versuche dir Bitcoin zu erschwindeln',
-      eng: 'Create fake transactions under a false name and try to obtain Bitcoin by fraud'
+      eng: ''
     },
     i6: {
       ger: 'Führe eine 51% Attacke durch, um die Blockchain nachträglich zu manipulieren',
-      eng: 'Perform a 51% attack to subsequently manipulate the blockchain'
+      eng: ''
     },
     i7: {
       ger: 'Erzähle anderen Leuten davon. Je mehr verstehen wie Bitcoin funktioniert, desto besser.',
-      eng: 'Tell other people about it. The more understand how Bitcoin works, the better.'
+      eng: ''
     }
   },
 
@@ -137,7 +137,7 @@ export default {
     },
     h3: {
       ger: 'Der private Schlüssel ist eine 256bit Zufallszahl. Der öffentliche Schlüssel wurde kryptographisch berechnet (Elliptische Kurve).',
-      eng: 'The private key is a 256bit random number. The public key was calculated using Elliptic Curve Cryptography.'
+      eng: ''
     },
     h4: {
       ger: 'Entspricht deiner Bitcoin Adresse, die in dieser Simulation mit deinem Nutzernamen verknüpft ist.',
@@ -145,7 +145,7 @@ export default {
     },
     h5: {
       ger: 'Achtung: Bewahre diesen Schlüssel an einem sicheren Ort auf. Kopiere ihn zum Beispiel in eine Textdatei auf deinem Computer. Halte ihn geheim und teile ihn mit niemanden. Wenn du diesen Schlüssel verlierst, sind alle deine Bitcoin (in dieser Simulation) für immer verloren. Er wird der Einfachheit halber während dieser Simulation in diesem Browser gespeichert, damit du ihn nicht jedes mal wieder eingeben musst.',
-      eng: "Caution: Keep your private key in a secure place. Don't share it with anyone. If you lose this key, all your Bitcoin (in this simulation) are permanently lost. For simplicity, this key is stored in the local storage of your Browser, so you don't have to reenter it every time you reload the page."
+      eng: "Caution: Keep your private key in a secure place. Don't share it with anyone. If you lose this key, all your Bitcoin (in this simulation) are permanently lost."
     },
     b1: {
       ger: 'Verstanden',
@@ -173,7 +173,7 @@ export default {
     },
     l3: {
       ger: 'Dein Block enthält bereits deine Belohnungstransaktion, die du bekommst, wenn du diesen Block gemined hast. Füge deinem Block zusätzlich Transaktionen aus dem Mempool (siehe unten) hinzu. Je mehr Transaktionen du in den Block aufnimmst, desto mehr Transaktionsgebühren erhältst du zusätzlich zu deiner Belohnung.',
-      eng: "Although it's perfectly fine to start mining a block that solely contains your reward transaction, you may want to consider adding pending transactions from the Mempool below. The more transactions you include in your block, the more transaction fees you can collect in addition to your block reward. "
+      eng: 'Start Mining to add the reward in your wallet.'
     },
     l4: {
       ger: 'Mining: Berechne den Hash dieses Blocks',
@@ -181,7 +181,7 @@ export default {
     },
     l5: {
       ger: 'Der Hash des Blocks berechnet sich aus den enthaltenen Transaktionen, dem Hash des vorherigen Blocks, der aktuellen Uhrzeit und einer zufälligen Zahl (Nonce). Finde solch eine Zahl, sodass der Hash mit',
-      eng: 'The hash of a block is calculated from the included transactions, the hash of the previous block, the current time and a random number (Nonce). Find a number such that the Hash of this block starts with '
+      eng: 'Click on Auto Mining - Minimum Difficulty is :  '
     },
     l6: {
       ger: 'Nullen beginnt.',
@@ -193,7 +193,7 @@ export default {
     },
     l8: {
       ger: 'Lehne dich zurück und lass den Computer die Arbeit machen. Das kann ein bisschen dauern, je nachdem wieviel Glück du hast. Durschnittliche Anzahl der Versuche:',
-      eng: 'Sit back and let the Computer do the work. This can take a while depending on how lucky you are. Average number of tries:'
+      eng: 'Average number of tries:'
     },
     l9: {
       ger: 'Hier werden alle ausstehenden Transaktionen gesammelt, die an dich übermittelt wurden. Prüfe für jede Transaktion ob die Signatur gültig ist. Anschließend kannst du die Transaktionen deinem Block hinzufügen und anfangen zu minen.',
@@ -201,7 +201,7 @@ export default {
     },
     l10: {
       ger: 'Der Mempool ist derzeit leer. Sobald es neue Transaktionen gibt erscheinen sie hier.',
-      eng: 'The Mempool is empty at the moment. As soon as new transactions are broadcasted, they will appear here.'
+      eng: 'The Mempool is empty. As soon as new transactions are broadcasted, they will appear here.'
     },
     l11: {
       ger: 'Prüfen',
@@ -268,7 +268,7 @@ export default {
     },
     l5: {
       ger: 'Die Digitale Signatur für diese Transaktion wurde mit deinem privaten Schlüssel erzeugt. Dadurch kann jeder im Bitcoin Netzwerk überprüfen, dass diese Transaktion auch tatsächlich von dir stammt.',
-      eng: 'The Digital Signature was calculated with your private key. Thus everybody in the network can now verify that this transaction actually comes from you.'
+      eng: 'The Digital Signature was calculated with your private key.'
     },
     l6: {
       ger: 'Du hast derzeit nicht genug Bitcoin für diese Transaktion. Du kannst sie dennoch absenden, musst aber damit rechnen, dass sie in keinen Block aufgenommen wird.',

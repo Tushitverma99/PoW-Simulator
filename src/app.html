@@ -14,25 +14,25 @@
 
         <div class="is-flex " style="justify-content:space-between;">
           <div>
-            <a class="has-text-weight-semibold" route-href="route: blockchain">Bitcoin Simulator</a>
-            |
+            <!-- <a class="has-text-weight-semibold" route-href="route: blockchain">Bitcoin Simulator</a>
+            | -->
 
 
-            <a show.bind="!state.page.explanation && !state.page.erklärung" class="has-text-info is-size-7 has-text-weight-semibold"
+            <!-- <a show.bind="!state.page.explanation && !state.page.erklärung" class="has-text-info is-size-7 has-text-weight-semibold"
                click.delegate="routeTutorial()">
               ${state.t.app.n1[state.l]}
-            </a>
+            </a> -->
 
             <span show.bind="state.page.explanation || state.page.erklärung" class="is-size-7">
               Tutorial
             </span>
           </div>
 
-          <div>
+          <!-- <div>
             <a click.delegate="changeLanguage('ger')" class="${ state.l === 'ger' ? 'has-text-weight-semibold has-text-info' : ''}">de</a>
             |
             <a click.delegate="changeLanguage('eng')" class="${ state.l === 'eng' ? 'has-text-weight-semibold has-text-info' : ''}">en</a>
-          </div>
+          </div> -->
 
 
         </div>
@@ -105,10 +105,10 @@
 
             <div class="if-flex">
 
-              <p class="p-75 has-text-weight-semibold" style="margin-top: 0.5rem;">${state.t.app.b4[state.l]}</p>
+              <!-- <p class="p-75 has-text-weight-semibold" style="margin-top: 0.5rem;">${state.t.app.b4[state.l]}</p>
               <a class="button is-info material is-size-7 " click.delegate="routeTutorial()">
                 ${state.t.app.b2[state.l]}
-              </a>
+              </a> -->
 
               <p class="p-75 has-text-weight-semibold" style="margin-top: 0.5rem;">${state.t.app.b3[state.l]}</p>
               <a class="button is-info material is-size-7 " route-href="route: wallet">
@@ -120,7 +120,7 @@
 
             <!-- <div class="is-flex" style="justify-content: center;"> -->
 
-            <div if.bind="!state.page.wallet" style="margin: auto; margin-top:1.5rem;max-width: 400px;">
+            <!-- <div if.bind="!state.page.wallet" style="margin: auto; margin-top:1.5rem;max-width: 400px;">
               <p class="p-75 has-text-weight-semibold" style="margin-top: 0.5rem;">${state.t.app.b5[state.l]}</p>
               <div class="has-shadow" style="position:relative;
                       padding-bottom:52.9%;
@@ -135,7 +135,7 @@
                         " width="100%" height="100%" src="https://www.youtube.com/embed/JAaHgrIt8sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
               </div>
-            </div>
+            </div> -->
 
 
 
@@ -180,9 +180,9 @@
           <li class="${state.page.block ? 'is-active' : ''}"><a route-href="route: block">Block
               Mining
             </a></li>
-          <li class="${state.page.transaction ? 'is-active' : ''}"><a route-href="route: transaction">
+           <li class="${state.page.transaction ? 'is-active' : ''}"><a route-href="route: transaction">
               ${state.t.app.tab3[state.l]}
-            </a></li>
+            </a></li> 
 
         </ul>
       </div>
@@ -225,7 +225,7 @@
 
   </div>
 
-  <div class="is-flex is-size-7 has-text-grey box is-marginless" style=" flex-direction: column; margin-top:2rem;">
+  <!-- <div class="is-flex is-size-7 has-text-grey box is-marginless" style=" flex-direction: column; margin-top:2rem;">
     <div>
       Feedback or Questions?
     </div>
@@ -307,10 +307,10 @@
     </div>
 
 
-  </div>
+  </div> -->
 
 
-  <div class="p-75" style="margin-bottom: 2rem; max-width: 300px;">
+  <!-- <div class="p-75" style="margin-bottom: 2rem; max-width: 300px;">
     <p class="" style="margin: 0.25rem 0;">Introduction Video</p>
     <div class="has-shadow" style="position:relative;
             padding-bottom:52.9%;
@@ -325,7 +325,7 @@
               " width="100%" height="100%" src="https://www.youtube.com/embed/JAaHgrIt8sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
     </div>
-  </div>
+  </div> -->
 
 
 
